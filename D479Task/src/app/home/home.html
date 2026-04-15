@@ -1,39 +1,103 @@
 <div class="grid">
 
-    <header>
+    <header class="header">
+        <div class="triangle"></div>
         <h1>Travel Taniti</h1>
     </header>
 
-    <nav>
-        <section>
+    <nav class="nav">
+        <section class="nav-element" (click)="goToPage('/food')">
             <h3>Food</h3>
         </section>
-        <section>
+        <div class="nav-gap"></div>
+        <section class="nav-element" (click)="goToPage('/lodging')">
             <h3>Lodging</h3>
         </section>
-        <section>
+        <div class="nav-gap"></div>
+        <section class="nav-element" (click)="goToPage('/activities')">
             <h3>Activities</h3>
         </section>
     </nav>
 
-    <main>
-        <section>
-            <h2>Upcoming Events</h2>
+    <main class="main-grid">
+        <section class="left-main-element"  id="upcoming-events">
+            <div class="left-main-header">
+                <h2>Upcoming Events</h2>
+            </div>
+            <section class="left-main-body">
+                <img class="image"src="Placeholder_Image.jpg">
+                <p>Lorem ipsum dolor sit amet 
+                    consectetur adipiscing elit. Consectetur adipiscing 
+                    elit quisque faucibus ex sapien vitae. Ex sapien vitae 
+                    pellentesque sem placerat in id. Placerat in id cursus 
+                    mi pretium tellus duis. Pretium tellus duis convallis 
+                    tempus leo eu aenean. Lorem ipsum dolor sit amet 
+                    consectetur adipiscing elit. Consectetur adipiscing 
+                    elit quisque faucibus ex sapien vitae. </p>
+                <div class="external-buttons">
+                    <button class='external-button' (click)="goToPage('/external')">Today</button>
+                    <button class='external-button' (click)="goToPage('/external')">Yesterday</button>
+                    <button class='external-button' (click)="goToPage('/external')">This Week</button>
+                </div>
+            </section>
         </section>
-        <section>
-            <h2>Transportation</h2>
-        </section>
-        <section>
-            <h2>Landscape</h2>
-        </section>
-        <section>
-            <h2>Culture</h2>
+        <section class="right-main">
+            <section class="right-main-element" id="transport">
+                <div class="right-main-header">
+                    <h2>Transportation</h2>
+                </div>
+                <section class="right-main-body" id="transport-buttons">
+                    <button class='transport-button' (click)="goToPage('/transport')">Buses</button>
+                    <button class='transport-button' (click)="goToPage('/transport')">Bicycles</button>
+                    <button class='transport-button' (click)="goToPage('/transport')">Rental Cars</button>
+                    <button class='transport-button' (click)="goToPage('/transport')">Ferries</button>
+                </section>
+            </section>
+            <div class="right-main-gap"></div>
+            <section class="right-main-element">
+                <div class="right-main-header">
+                    <h2>Landscape</h2>
+                </div>
+                <section class="right-main-body">
+                    <p>Lorem ipsum dolor sit amet 
+                    consectetur adipiscing elit. Consectetur adipiscing 
+                    elit quisque faucibus ex sapien vitae. Ex sapien vitae 
+                    pellentesque sem placerat in id. Placerat in id cursus 
+                    mi pretium tellus duis. Pretium tellus duis convallis 
+                    tempus leo eu aenean. Placerat in id cursus 
+                    mi pretium tellus duis. Pretium tellus duis convallis 
+                    tempus leo eu aenean. Lorem ipsum dolor sit amet 
+                    consectetur adipiscing elit. Consectetur adipiscing 
+                    elit quisque faucibus ex sapien vitae. Ex sapien vitae 
+                    pellentesque sem placerat.</p>
+                </section>
+            </section>
+            <div class="right-main-gap"></div>
+            <section class="right-main-element">
+                <div class="right-main-header">
+                    <h2>Culture</h2>
+                </div>
+                <section class="right-main-body">
+                    <p>Lorem ipsum dolor sit amet 
+                    consectetur adipiscing elit. Consectetur adipiscing 
+                    elit quisque faucibus ex sapien vitae. Ex sapien vitae 
+                    pellentesque sem placerat in id. Placerat in id cursus 
+                    mi pretium tellus duis. Pretium tellus duis convallis 
+                    tempus leo eu aenean. Placerat in id cursus 
+                    mi pretium tellus duis. Pretium tellus duis convallis 
+                    tempus leo eu aenean. Lorem ipsum dolor sit amet 
+                    consectetur adipiscing elit. Consectetur adipiscing 
+                    elit quisque faucibus ex sapien vitae. Ex sapien vitae 
+                    pellentesque sem placerat.</p>
+                </section>
+            </section>
         </section>
     </main>
     
-    <side>
-        <section>Image</section>
-        <section>Image</section>
-    </side>
+    <section class="images">
+        <img class="image" src="Placeholder_Image.jpg">
+        <div class="image-gap"></div>
+        <img class="image" src="Placeholder_Image.jpg">
+    </section>
 </div>
 

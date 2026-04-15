@@ -1,5 +1,118 @@
+h1, h2, h3, p{
+    margin: 0px;
+}
+.header {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+}
+.triangle {
+    width: 0;
+    height: 0;
+    border-width: 22vh 22vh 0 0;
+    border-color: #FED8B1 transparent transparent transparent;
+    border-style: solid;
+    display: inline-block;
+}
+h1 {
+    font-size: 48px;
+    padding: 5vw 2vw;
+}
 .grid {
     display: grid;
-    grid-template-columns: 60vw 40vw;
-    margin: 20px;
+    grid-template-columns: 65% 35%;
+    background-color: #FFEFD5;
+    height: 100%;
+}
+.nav {
+    background-color: #FED8B1;
+    padding: 2vw;
+}
+.nav-element {
+    background-color: white;
+    padding: 4px 0px 4px 20px;
+    transform: scale(1.0);
+    transition: transform 0.25s ease;
+}
+.nav-element:hover {
+    transform: scale(1.02);
+}
+.nav-gap, .right-main-gap, .image-gap {
+    height: 2vw;
+}
+.main-grid {
+    display: grid;
+    grid-template-columns: 35% 60%;
+    gap: 5%;
+    background-color: white;
+    padding: 2vw;
+}
+.right-main-element, .left-main-element {  
+    width: 100%;
+    transform: scale(1.0);
+    transition: transform 0.25s ease;
+}
+.right-main-element:hover, .left-main-element:hover {
+    transform: scale(1.02);
+}
+#transport:hover, #upcoming-events:hover{
+    transform: none;
+}
+.transport-button, .external-button {
+    transform: scale(1.0);
+    transition: transform 0.25s ease;
+}
+.transport-button:hover, .external-button:hover{
+    transform: scale(1.02);
+}
+.right-main-header, .left-main-header {
+    background-color: #FED8B1;
+}
+.right-main-header h2, .left-main-header h2{
+    padding: 5px 5px 5px 25px;
+}
+.right-main-body, .left-main-body {
+    background-color: #FFEFD5;
+    padding: 20px;
+    margin:0px;
+    padding-left: 20px;
+}
+.right-main-body p, .left-main-body p {
+    width: 90%;
+}
+.left-main-body img {
+    margin-bottom: 2vw;;
+}
+#transport-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.external-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:1vw;
+    margin-top: 2vw;
+}
+.external-button {
+    width: 90%;
+    height: 4vh;
+    border: none;
+    background-color: white;
+}
+#transport-buttons button {
+    width: 7vw;
+    height: 4vh;
+    border: none;
+    background-color: white;
+}
+.images {
+    justify-items: center;
+    padding: 2vw;
+}
+.image {
+    background-color: white;
+    width: 100%;
+    height: 45%;
 }
