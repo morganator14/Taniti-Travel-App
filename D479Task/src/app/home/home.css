@@ -1,10 +1,18 @@
+.grid {
+    font-family: "lotus-eden", sans-serif;
+    font-weight: 900;
+    color: #241623;
+} 
+
 h1, h2, h3, p{
     margin: 0px;
+
 }
 .header {
     display: flex;
     flex-direction: row;
     align-content: center;
+    background-color: #568ea3;
 }
 .triangle {
     width: 0;
@@ -21,21 +29,21 @@ h1 {
 .grid {
     display: grid;
     grid-template-columns: 65% 35%;
-    background-color: #FFEFD5;
+    background-color: #ffffff;
     height: 100%;
 }
 .nav {
-    background-color: #FED8B1;
+    background-color: #ffe8d1;
     padding: 2vw;
 }
 .nav-element {
     background-color: white;
-    padding: 4px 0px 4px 20px;
-    transform: scale(1.0);
+    padding: 8px 0px 8px 20px;
+    transform: translate(0);
     transition: transform 0.25s ease;
 }
 .nav-element:hover {
-    transform: scale(1.02);
+    transform: translate(-10px);
 }
 .nav-gap, .right-main-gap, .image-gap {
     height: 2vw;
@@ -59,20 +67,20 @@ h1 {
     transform: none;
 }
 .transport-button, .external-button {
-    transform: scale(1.0);
+    transform: translate(0);
     transition: transform 0.25s ease;
 }
 .transport-button:hover, .external-button:hover{
-    transform: scale(1.02);
+    transform: translate(10px);
 }
 .right-main-header, .left-main-header {
-    background-color: #FED8B1;
+    background-color: #826251;
 }
 .right-main-header h2, .left-main-header h2{
-    padding: 5px 5px 5px 25px;
+    padding: 8px 8px 8px 25px;
 }
 .right-main-body, .left-main-body {
-    background-color: #FFEFD5;
+    background-color: #ffe8d1;
     padding: 20px;
     margin:0px;
     padding-left: 20px;
@@ -94,6 +102,7 @@ h1 {
     align-items: center;
     gap:1vw;
     margin-top: 2vw;
+
 }
 .external-button {
     width: 90%;
@@ -110,6 +119,7 @@ h1 {
 .images {
     justify-items: center;
     padding: 2vw;
+    background-color: #568ea3;
 }
 .image {
     background-color: white;
