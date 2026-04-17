@@ -5,12 +5,14 @@ import { Transport } from './transport/transport';
 import { Activities } from './activities/activities';
 import { Home } from './home/home';
 
-export const routes: Routes = [
+export const routes: Routes = 
+[
     {path:'', redirectTo:'home', pathMatch:'full'},
     {path:'food',component:Food},
     {path:'lodging', component:Lodging},
     {path:'transport',component:Transport},
     {path:'activities', component:Activities},
-    {path:'home', component:Home}
+    {path:'home', component:Home},
+    
 
 ];

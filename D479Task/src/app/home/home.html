@@ -1,8 +1,8 @@
 <link rel="stylesheet" href="https://use.typekit.net/gyr7efa.css">
+<div class="body">
 <div class="grid">
 
-    <header class="header">
-        <div class="triangle"></div>
+    <header class="header" id="header">
         <h1>Travel Taniti</h1>
     </header>
 
@@ -19,77 +19,138 @@
             <h3>Activities</h3>
         </section>
     </nav>
-
+</div>
+<section class="punchline">
+    <h2 class="punch-text">You're Pacific Island Dream Starts Here</h2>
+    <button class="discover-button">Discover More</button>
+</section>
+<img src="palmTree.png" class="palm-tree">
     <main class="main-grid">
-        <section class="left-main-element"  id="upcoming-events">
-            <div class="left-main-header">
+        <section class="content-section" id="top-element">
+            <h2>Top Rated Experiences</h2>
+            <section class="experiences">
+                <div class="experience-card"><h3>Dolphin Viewing</h3></div>
+                <div class="experience-card"><h3>Snorkeling</h3></div>
+                <div class="experience-card"><h3>Volcano Tours</h3></div>
+            </section>
+        </section>
+
+        <section class="content-section"  id="upcoming-events">
+            <div>
                 <h2>Upcoming Events</h2>
             </div>
-            <section class="left-main-body">
-                <img class="image"src="Placeholder_Image.jpg">
-                <p>Lorem ipsum dolor sit amet 
-                    consectetur adipiscing elit. Consectetur adipiscing 
-                    elit quisque faucibus ex sapien vitae. Ex sapien vitae 
-                    pellentesque sem placerat in id. Placerat in id cursus 
-                    mi pretium tellus duis. Pretium tellus duis convallis 
-                    tempus leo eu aenean.  </p>
-                <div class="external-buttons">
-                    <button class='external-button' (click)="goToPage('/external')">Today</button>
-                    <button class='external-button' (click)="goToPage('/external')">Yesterday</button>
-                    <button class='external-button' (click)="goToPage('/external')">This Week</button>
+            <section >
+                <div class="events">
+                    <div class="event">
+                        <img class="image"src="Placeholder_Image.jpg">
+                        <h3>blurb</h3>
+                    </div>
+                    <div class="event">
+                        <img class="image"src="Placeholder_Image.jpg">
+                        <h3>blurb</h3>
+                    </div>
+                    <div class="event">
+                        <img class="image"src="Placeholder_Image.jpg">
+                        <h3>blurb</h3>
+                    </div>
+                    <div class="event">
+                        <img class="image"src="Placeholder_Image.jpg">
+                        <h3>blurb</h3>
+                    </div>
                 </div>
             </section>
         </section>
-        <section class="right-main">
-            <section class="right-main-element" id="transport">
-                <div class="right-main-header">
-                    <h2>Transportation</h2>
-                </div>
-                <section class="right-main-body" id="transport-buttons">
-                    <button class='transport-button' (click)="goToPage('/transport')">Buses</button>
-                    <button class='transport-button' (click)="goToPage('/transport')">Bicycles</button>
-                    <button class='transport-button' (click)="goToPage('/transport')">Rental Cars</button>
-                    <button class='transport-button' (click)="goToPage('/transport')">Ferries</button>
+
+        <section class="content-section" id="transport">
+            <section class="transport-buttons">
+                <button class='transport-button' (click)="goToPage('/transport')">
+                    <h3>Buses</h3>
+                    <img class='transport-image' src="Placeholder_Image.jpg">
+                </button>
+                <button class='transport-button' (click)="goToPage('/transport')">
+                    <h3>Bicycles</h3>
+                    <img class='transport-image' src="Placeholder_Image.jpg">
+                </button>
+                <button class='transport-button' (click)="goToPage('/transport')">
+                    <h3>Rental Cars</h3>
+                    <img class='transport-image' src="Placeholder_Image.jpg">
+                </button>
+                <button class='transport-button' (click)="goToPage('/transport')">
+                    <h3>Ferries</h3>
+                    <img class='transport-image' src="Placeholder_Image.jpg">
+                </button>
+            </section>
+            <div class="transport-header">
+                <h2>Transportation</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur 
+                        adipiscing elit, sed do eiusmod tempor 
+                        incididunt ut labore et dolore magna 
+                        aliqua. Ut enim ad minim veniam, quis 
+                        nostrud exercitation ullamco laboris nisi 
+                        ut aliquip ex ea commodo consequat. Duis 
+                        aute irure dolor in reprehenderit in 
+                        voluptate velit esse cillum dolore eu 
+                        fugiat nulla pariatur. Excepteur sint 
+                        occaecat cupidatat non proident, sunt in 
+                        culpa qui officia deserunt mollit anim id 
+                        est laborum.</p>
+            </div>
+        </section>
+
+        
+        <section class="bottom-section">
+            <img class="beach" src="sand.png">
+            <section class="content-section" id="landscape">
+                <section class="landscape">
+                    <div class="landscape-text">
+                        <h2>Landscape</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur 
+                        adipiscing elit, sed do eiusmod tempor 
+                        incididunt ut labore et dolore magna 
+                        aliqua. Ut enim ad minim veniam, quis 
+                        nostrud exercitation ullamco laboris nisi 
+                        ut aliquip ex ea commodo consequat. Duis 
+                        aute irure dolor in reprehenderit in 
+                        voluptate velit esse cillum dolore eu 
+                        fugiat nulla pariatur. Excepteur sint 
+                        occaecat cupidatat non proident, sunt in 
+                        culpa qui officia deserunt mollit anim id 
+                        est laborum.</p>
+                        </div>
+                        <img class="landscape-image" src="Placeholder_Image.jpg">
                 </section>
             </section>
-            <div class="right-main-gap"></div>
-            <section class="right-main-element">
-                <div class="right-main-header">
-                    <h2>Landscape</h2>
-                </div>
-                <section class="right-main-body">
-                    <p>Lorem ipsum dolor sit amet 
-                    consectetur adipiscing elit. Consectetur adipiscing 
-                    elit quisque faucibus ex sapien vitae. Ex sapien vitae 
-                    pellentesque sem placerat in id. Placerat in id cursus 
-                    mi pretium tellus duis. Pretium tellus duis convallis 
-                    tempus leo eu aenean. Placerat in id cursus 
-                    mi pretium tellus duis. </p>
-                </section>
-            </section>
-            <div class="right-main-gap"></div>
-            <section class="right-main-element">
-                <div class="right-main-header">
+
+            <section class="content-section" id="culture">
+                <div class="">
                     <h2>Culture</h2>
                 </div>
                 <section class="right-main-body">
-                    <p>Lorem ipsum dolor sit amet 
-                    consectetur adipiscing elit. Consectetur adipiscing 
-                    elit quisque faucibus ex sapien vitae. Ex sapien vitae 
-                    pellentesque sem placerat in id. Placerat in id cursus 
-                    mi pretium tellus duis. Pretium tellus duis convallis 
-                    tempus leo eu aenean. Placerat in id cursus 
-                    mi pretium tellus duis. Pretium tellus duis convallis 
-                    tempus leo eu aenean. </p>
+                    <p>Lorem ipsum dolor sit amet, consectetur 
+                        adipiscing elit, sed do eiusmod tempor 
+                        incididunt ut labore et dolore magna 
+                        aliqua. Ut enim ad minim veniam, quis 
+                        nostrud exercitation ullamco laboris nisi 
+                        ut aliquip ex ea commodo consequat. Duis 
+                        aute irure dolor in reprehenderit in 
+                        voluptate velit esse cillum dolore eu 
+                        fugiat nulla pariatur. Excepteur sint 
+                        occaecat cupidatat non proident, sunt in 
+                        culpa qui officia deserunt mollit anim id 
+                        est laborum.</p>
                 </section>
             </section>
         </section>
     </main>
     
-    <section class="images">
-        <img class="image" src="Placeholder_Image.jpg">
-        <div class="image-gap"></div>
-        <img class="image" src="Placeholder_Image.jpg">
+    <section class="footer">
+        <h2>Questions?</h2>
+        <h3>Contact us at tanititravel@taniti.org</h3>
+        <a [routerLink]="[]" fragment="header" class="footer-button">Back to Top</a>
+        <button class="footer-button">Food</button>
+        <button class="footer-button">Lodging</button>
+        <button class="footer-button">Activities</button>
+        <a [routerLink]="[]" fragment="transport" class="footer-button">Transportation</a>
     </section>
 </div>
 
