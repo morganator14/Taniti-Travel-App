@@ -1,10 +1,10 @@
 <link rel="stylesheet" href="https://use.typekit.net/gyr7efa.css">
-<div class="body">
+<div class="body" id="header">
 <div class="fixed-top">
     <div class="grid">
 
-        <header class="header" id="header">
-            <h1>Travel Taniti</h1>
+        <header class="header">
+            <h1 (click)="goToPage('/home')">Travel Taniti</h1>
         </header>
 
         <nav class="nav">
@@ -22,8 +22,8 @@
         </nav>
     </div>
     <section class="punchline">
-        <h2 class="punch-text">You're Pacific Island Dream Starts Here</h2>
-        <button class="discover-button">Discover More</button>
+        <h2 class="punch-text">Your Pacific Island Dream Starts Here</h2>
+        <button class="discover-button" [routerLink]="[]" fragment="top-element">Discover More</button>
     </section>
 </div>
 

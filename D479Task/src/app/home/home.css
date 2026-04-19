@@ -1,71 +1,37 @@
-h1, h3, p {
-    margin: 0px;
-}
-.body {
-    background: linear-gradient(#f1faee, #011F5B);
-    overflow-x: hidden;
-}
-.header {
-    display: flex;
-    flex-direction: row;
-    align-content: center;
-    flex-wrap: wrap;
-    width: 100%;
-    z-index: 10;
-    background: transparent;
-}
-
 h1 {
     font-size: clamp(40px, 8vw, 100px);
     font-weight: 900;
     padding: 3vw 5vw;
+    margin: 0px;
 }
-
 h2 {
     font-size: clamp(24px, 4vw, 50px);
 }
-
 h3 {
     color: var(--darkBlue);
     text-transform: uppercase;
     font-size: clamp(12px, 1.2vw, 18px);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: lighter;
+    margin: 0px;
 }
-
 p {
     color: var(--darkBlue);
     font-size: clamp(11px, 1vw, 14px);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: lighter;
+    margin: 0px;
 }
 .punchline {
     margin-top: 5vh;
     justify-items: center;
-
 }
-
 .punch-text {
     color: var(--blue);
     text-transform: uppercase;
     font-size: clamp(20px, 3vw, 40px);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: lighter;
-}
-.fixed-top {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 10;
-    background: transparent;
-}
-
-.scroll-body {
-    position: relative;
-    z-index: 20;
-    background: transparent;
-    margin-top: 45vh;
 }
 .discover-button {
     display: block;
@@ -78,57 +44,17 @@ p {
     font-weight: 900;
     font-size: clamp(16px, 2vw, 25px);
     cursor: pointer;
+    color: var(--darkBlue);
 }
 
 .discover-button:hover {
     background-color: var(--lightBlue);
     cursor: pointer;
 }
-
-
 .palm-tree {
     width: 100%;
 }
 
-.grid {
-    display: grid;
-    grid-template-columns: 85% 15%;
-    height: 100%;
-    font-family: "cofo-raffine", sans-serif;
-    font-style: normal;
-    color: var(--darkBlue);
-}
-
-@media (max-width: 768px) {
-    .grid {
-        grid-template-columns: 1fr;
-    }
-}
-.nav {
-    padding: 2vw;
-}
-
-.nav-element {
-    background-color: var(--white);
-    padding: 4px 0px 4px 20px;
-    transform: translate(0);
-    transition: transform 0.25s ease;
-    border-radius: 5px;
-    font-weight: 100;
-}
-
-.nav-element:hover {
-    transform: translate(-10px);
-    background-color: var(--lightBlue);
-}
-
-.nav-element h3 {
-    font-size: clamp(10px, 1vw, 14px);
-}
-
-.nav-gap {
-    height: 0.5vw;
-}
 .main-grid {
     display: flex;
     flex-direction: column;

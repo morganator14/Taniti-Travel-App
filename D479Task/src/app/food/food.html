@@ -1,1 +1,44 @@
-<p>food works!</p>
+<link rel="stylesheet" href="https://use.typekit.net/gyr7efa.css">
+<div class="body" id="header">
+<div class="fixed-top">
+    <div class="grid">
+
+        <header class="header">
+            <h1 (click)="goToPage('/home')">Travel Taniti</h1>
+        </header>
+
+        <nav class="nav">
+            <section class="nav-element" (click)="goToPage('/food')">
+                <h3>Food</h3>
+            </section>
+            <div class="nav-gap"></div>
+            <section class="nav-element" (click)="goToPage('/lodging')">
+                <h3>Lodging</h3>
+            </section>
+            <div class="nav-gap"></div>
+            <section class="nav-element" (click)="goToPage('/activities')">
+                <h3>Activities</h3>
+            </section>
+        </nav>
+    </div>
+</div>
+  
+<section class="scroll-body">
+    <main class="restaurant-grid">
+        <h2 class="restaurant-category">Authentic</h2>
+        <section class="restaurant"></section>
+        <section class="restaurant"></section>
+        <section class="restaurant"></section>
+        <h2 class="restaurant-category">Family Friendly</h2>
+        <section class="restaurant"></section>
+        <section class="restaurant"></section>
+        <section class="restaurant"></section>
+        <h2 class="restaurant-category">Couples Dining</h2>
+        <section class="restaurant"></section>
+        <section class="restaurant"></section>
+        <section class="restaurant"></section>
+    </main>
+    <footer class="footer">
+
+    </footer>
+</section>

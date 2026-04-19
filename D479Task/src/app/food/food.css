@@ -1,0 +1,17 @@
+.restaurant-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3vw;
+    width: 75%;
+    margin: 0 auto;
+    margin-top: -15vh;
+    margin-bottom: 10vh;
+}
+.restaurant {
+    aspect-ratio: 1/1;
+    background-color: var(--white);
+    border-radius: 5px;
+}
+.restaurant-category {
+    grid-column: 1/4;
+}
