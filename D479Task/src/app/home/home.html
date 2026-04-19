@@ -1,29 +1,33 @@
 <link rel="stylesheet" href="https://use.typekit.net/gyr7efa.css">
 <div class="body">
-<div class="grid">
+<div class="fixed-top">
+    <div class="grid">
 
-    <header class="header" id="header">
-        <h1>Travel Taniti</h1>
-    </header>
+        <header class="header" id="header">
+            <h1>Travel Taniti</h1>
+        </header>
 
-    <nav class="nav">
-        <section class="nav-element" (click)="goToPage('/food')">
-            <h3>Food</h3>
-        </section>
-        <div class="nav-gap"></div>
-        <section class="nav-element" (click)="goToPage('/lodging')">
-            <h3>Lodging</h3>
-        </section>
-        <div class="nav-gap"></div>
-        <section class="nav-element" (click)="goToPage('/activities')">
-            <h3>Activities</h3>
-        </section>
-    </nav>
+        <nav class="nav">
+            <section class="nav-element" (click)="goToPage('/food')">
+                <h3>Food</h3>
+            </section>
+            <div class="nav-gap"></div>
+            <section class="nav-element" (click)="goToPage('/lodging')">
+                <h3>Lodging</h3>
+            </section>
+            <div class="nav-gap"></div>
+            <section class="nav-element" (click)="goToPage('/activities')">
+                <h3>Activities</h3>
+            </section>
+        </nav>
+    </div>
+    <section class="punchline">
+        <h2 class="punch-text">You're Pacific Island Dream Starts Here</h2>
+        <button class="discover-button">Discover More</button>
+    </section>
 </div>
-<section class="punchline">
-    <h2 class="punch-text">You're Pacific Island Dream Starts Here</h2>
-    <button class="discover-button">Discover More</button>
-</section>
+
+<section class="scroll-body">
 <img src="palmTree.png" class="palm-tree">
     <main class="main-grid">
         <section class="content-section" id="top-element">
@@ -152,5 +156,6 @@
         <button class="footer-button">Activities</button>
         <a [routerLink]="[]" fragment="transport" class="footer-button">Transportation</a>
     </section>
+</section>
 </div>
 

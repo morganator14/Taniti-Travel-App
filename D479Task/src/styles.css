@@ -11,3 +11,8 @@ body {
 --blue: #597091;
 --darkBlue: #011F5B;
 }
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}

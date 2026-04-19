@@ -10,6 +10,9 @@ h1, h3, p {
     flex-direction: row;
     align-content: center;
     flex-wrap: wrap;
+    width: 100%;
+    z-index: 10;
+    background: transparent;
 }
 
 h1 {
@@ -39,6 +42,7 @@ p {
 .punchline {
     margin-top: 5vh;
     justify-items: center;
+
 }
 
 .punch-text {
@@ -48,7 +52,21 @@ p {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: lighter;
 }
+.fixed-top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    background: transparent;
+}
 
+.scroll-body {
+    position: relative;
+    z-index: 20;
+    background: transparent;
+    margin-top: 45vh;
+}
 .discover-button {
     display: block;
     width: clamp(140px, 30%, 300px);
@@ -59,10 +77,12 @@ p {
     font-family: "cofo-raffine", sans-serif;
     font-weight: 900;
     font-size: clamp(16px, 2vw, 25px);
+    cursor: pointer;
 }
 
 .discover-button:hover {
-    background-color: var(--lightblue);
+    background-color: var(--lightBlue);
+    cursor: pointer;
 }
 
 
@@ -273,9 +293,11 @@ p {
     margin-right: 0;
     height: auto;
     min-height: 40vh;
-    margin-top: -5vh;
+    margin-top: -15vh;
     justify-items: right;
     background-color: var(--lightBlue);
+    border: 1px solid var(--lightBlue);
+    border-radius: 5px;
     padding: clamp(20px, 4vw, 60px);
     box-sizing: border-box;
 }
