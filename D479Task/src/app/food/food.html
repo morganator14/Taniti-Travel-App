@@ -78,9 +78,9 @@
         <h2>Questions?</h2>
         <h3>Contact us at tanititravel@taniti.org</h3>
         <a [routerLink]="[]" fragment="header" class="footer-button">Back to Top</a>
-        <button class="footer-button">Food</button>
-        <button class="footer-button">Lodging</button>
-        <button class="footer-button">Activities</button>
+        <button class="footer-button" (click)="goToPage('/food')">Food</button>
+        <button class="footer-button" (click)="goToPage('/lodging')">Lodging</button>
+        <button class="footer-button" (click)="goToPage('/activities')">Activities</button>
         <a [routerLink]="[]" fragment="transport" class="footer-button">Transportation</a>
     </footer>
 </section>

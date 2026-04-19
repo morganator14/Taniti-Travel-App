@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
-import { Router } from '@angular/router';
+import { Router, RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-activities',
-  imports: [],
+  imports: [RouterLink],
   templateUrl: './activities.html',
   styleUrl: './activities.css',
 })

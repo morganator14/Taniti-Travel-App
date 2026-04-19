@@ -1,27 +1,4 @@
-h1 {
-    font-size: clamp(40px, 8vw, 100px);
-    font-weight: 900;
-    padding: 3vw 5vw;
-    margin: 0px;
-}
-h2 {
-    font-size: clamp(24px, 4vw, 50px);
-}
-h3 {
-    color: var(--darkBlue);
-    text-transform: uppercase;
-    font-size: clamp(12px, 1.2vw, 18px);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: lighter;
-    margin: 0px;
-}
-p {
-    color: var(--darkBlue);
-    font-size: clamp(11px, 1vw, 14px);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: lighter;
-    margin: 0px;
-}
+
 .punchline {
     margin-top: 5vh;
     justify-items: center;
@@ -161,7 +138,8 @@ p {
 }
 .transport-image {
     width: 80%;
-    aspect-ratio: 1/1;
+    height: 40%;
+    object-fit: cover;
     padding-top: 1vh;
 }
 .transport-header {
@@ -236,34 +214,3 @@ p {
     }
 }
 
-.footer {
-    display: flex;
-    flex-direction: row;
-    padding: clamp(20px, 8vh, 80px) clamp(16px, 4vw, 60px);
-    gap: 2vw;
-    background: linear-gradient(transparent, #f1faee);
-    align-items: center;
-    justify-content: space-between;
-    margin-top: -30vh;
-    flex-wrap: wrap;
-    position: relative;
-    z-index: 20;
-}
-
-.footer-button {
-    height: 5vh;
-    width: clamp(80px, 10vw, 160px);
-    background-color: var(--white);
-    border: 1px solid var(--white);
-    border-radius: 5px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-transform: uppercase;
-    font-size: clamp(10px, 0.9vw, 14px);
-    text-align: center;
-    align-content: center;
-    text-decoration: none;
-}
-
-.footer-button:hover {
-    background-color: var(--lightBlue);
-}
