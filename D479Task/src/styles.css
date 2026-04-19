@@ -11,8 +11,12 @@ html {
 body {
     font-family: "cofo-raffine", sans-serif;
     font-style: normal;
+    opacity: 1;
+    transition: opacity 0.3s ease;
 }
-
+body.fade-out {
+    opacity: 0;
+}
 html, body {
     margin: 0;
     padding: 0;
@@ -56,7 +60,7 @@ p {
 .body{
     background:linear-gradient(#f1faee, #011F5B);
     min-height: 100vh;
-    overflow-x: hidden
+    overflow-x: hidden;
 }
 .fixed-top {
     position: fixed;
@@ -111,4 +115,35 @@ p {
     .grid {
         grid-template-columns: 1fr;
     }
+}
+.footer {
+    display: flex;
+    flex-direction: row;
+    padding: clamp(20px, 8vh, 80px) clamp(16px, 4vw, 60px);
+    gap: 2vw;
+    background: linear-gradient(transparent, #f1faee);
+    align-items: center;
+    justify-content: space-between;
+    margin-top: -30vh;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 20;
+}
+
+.footer-button {
+    height: 5vh;
+    width: clamp(80px, 10vw, 160px);
+    background-color: var(--white);
+    border: 1px solid var(--white);
+    border-radius: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: uppercase;
+    font-size: clamp(10px, 0.9vw, 14px);
+    text-align: center;
+    align-content: center;
+    text-decoration: none;
+}
+
+.footer-button:hover {
+    background-color: var(--lightBlue);
 }

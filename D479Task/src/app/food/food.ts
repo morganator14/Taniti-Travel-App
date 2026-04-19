@@ -1,9 +1,9 @@
 import { Component, HostListener } from '@angular/core';
-import { Router } from '@angular/router';
+import { Router, RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-food',
-  imports: [],
+  imports: [RouterLink],
   templateUrl: './food.html',
   styleUrl: './food.css',
 })
@@ -18,7 +18,7 @@ export class Food {
   onScroll(): void {
   const scrollY = window.scrollY;
   const fadeStart = 0;
-  const fadeEnd = 200;
+  const fadeEnd = 150;
 
   const opacity = 1 - Math.min(scrollY / (fadeEnd - fadeStart), 1);
 
