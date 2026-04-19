@@ -33,9 +33,18 @@
         <section class="content-section" id="top-element">
             <h2>Top Rated Experiences</h2>
             <section class="experiences">
-                <div class="experience-card"><h3>Dolphin Viewing</h3></div>
-                <div class="experience-card"><h3>Snorkeling</h3></div>
-                <div class="experience-card"><h3>Volcano Tours</h3></div>
+                <div class="experience-card" (click)="goToPage('/activities')">
+                    <h3>Dolphin Viewing</h3>
+                    <div class="experience-info">location</div>
+                </div>
+                <div class="experience-card" (click)="goToPage('/activities')">
+                    <h3>Snorkeling</h3>
+                    <div class="experience-info">location</div>
+                </div>
+                <div class="experience-card" (click)="goToPage('/activities')">
+                    <h3>Volcano Tours</h3>
+                    <div class="experience-info">location</div>
+                </div>
             </section>
         </section>
 

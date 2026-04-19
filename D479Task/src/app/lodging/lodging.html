@@ -1,66 +1,70 @@
 <link rel="stylesheet" href="https://use.typekit.net/gyr7efa.css">
 <div class="body" id="header">
-<div class="fixed-top">
-    <div class="grid">
+    <div class="fixed-top">
+        <div class="grid">
 
-        <header class="header">
-            <h1 (click)="goToPage('/home')">Travel Taniti</h1>
-        </header>
+            <header class="header">
+                <h1 (click)="goToPage('/home')">Travel Taniti</h1>
+            </header>
 
-        <nav class="nav">
-            <section class="nav-element" (click)="goToPage('/food')">
-                <h3>Food</h3>
-            </section>
-            <div class="nav-gap"></div>
-            <section class="nav-element" (click)="goToPage('/lodging')">
-                <h3>Lodging</h3>
-            </section>
-            <div class="nav-gap"></div>
-            <section class="nav-element" (click)="goToPage('/activities')">
-                <h3>Activities</h3>
-            </section>
-        </nav>
+            <nav class="nav">
+                <section class="nav-element" (click)="goToPage('/food')">
+                    <h3>Food</h3>
+                </section>
+                <div class="nav-gap"></div>
+                <section class="nav-element" (click)="goToPage('/lodging')">
+                    <h3>Lodging</h3>
+                </section>
+                <div class="nav-gap"></div>
+                <section class="nav-element" (click)="goToPage('/activities')">
+                    <h3>Activities</h3>
+                </section>
+            </nav>
+        </div>
     </div>
+
+    <section class="scroll-body">
+        <main class="lodges">
+            <section class="lodging-option">
+                <div>
+                    <h2 class="lodging-name">The Lodge</h2>
+                    <p class="lodging-text">blurb</p>
+                </div>
+                <img src="Placeholder_Image.jpg" class="lodging-image">
+            </section> 
+            <hr class="lodging-divide">   
+            <section class="lodging-option2">
+                <img src="Placeholder_Image.jpg" class="lodging-image">
+                <div>
+                    <h2 class="lodging-name">The Villas</h2>
+                    <p class="lodging-text">blurb</p>
+                </div>
+            </section>
+            <hr class="lodging-divide"> 
+            <section class="lodging-option">
+                <div>
+                    <h2 class="lodging-name">Camping</h2>
+                    <p class="lodging-text">blurb</p>
+                </div>
+                <img src="Placeholder_Image.jpg" class="lodging-image">
+            </section>
+            <hr class="lodging-divide"> 
+            <section class="lodging-option2">
+                <img src="Placeholder_Image.jpg" class="lodging-image">
+                <div>
+                    <h2 class="lodging-name">The Coves</h2>
+                    <p class="lodging-text">blurb</p>
+                </div>
+            </section>
+        </main>
+        <footer class="footer" id="lodging-footer">
+            <h2>Questions?</h2>
+            <h3>Contact us at tanititravel@taniti.org</h3>
+            <a [routerLink]="[]" fragment="header" class="footer-button">Back to Top</a>
+            <button class="footer-button" (click)="goToPage('/food')">Food</button>
+            <button class="footer-button" (click)="goToPage('/lodging')">Lodging</button>
+            <button class="footer-button" (click)="goToPage('/activities')">Activities</button>
+            <a [routerLink]="[]" fragment="transport" class="footer-button">Transportation</a>
+        </footer>
+    </section>
 </div>
-  
-<section class="scroll-body">
-    <main class="lodges">
-        <section class="lodging-option">
-            <div>
-                <h2 class="lodging-name">The Lodge</h2>
-                <p class="lodging-text">blurb</p>
-            </div>
-            <img src="Placeholder_Image.jpg" class="lodging-image">
-        </section>    
-        <section class="lodging-option">
-            <img src="Placeholder_Image.jpg" class="lodging-image">
-            <div>
-                <h2 class="lodging-name">The Villas</h2>
-                <p class="lodging-text">blurb</p>
-            </div>
-        </section>
-        <section class="lodging-option">
-            <div>
-                <h2 class="lodging-name">Camping</h2>
-                <p class="lodging-text">blurb</p>
-            </div>
-            <img src="Placeholder_Image.jpg" class="lodging-image">
-        </section>
-        <section class="lodging-option">
-            <img src="Placeholder_Image.jpg" class="lodging-image">
-            <div>
-                <h2 class="lodging-name">The Coves</h2>
-                <p class="lodging-text">blurb</p>
-            </div>
-        </section>
-    </main>
-    <footer class="footer" id="lodging-footer">
-        <h2>Questions?</h2>
-        <h3>Contact us at tanititravel@taniti.org</h3>
-        <a [routerLink]="[]" fragment="header" class="footer-button">Back to Top</a>
-        <button class="footer-button" (click)="goToPage('/food')">Food</button>
-        <button class="footer-button" (click)="goToPage('/lodging')">Lodging</button>
-        <button class="footer-button" (click)="goToPage('/activities')">Activities</button>
-        <a [routerLink]="[]" fragment="transport" class="footer-button">Transportation</a>
-    </footer>
-</section>
