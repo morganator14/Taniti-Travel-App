@@ -129,7 +129,7 @@ p {
     align-items: center;
     justify-content: space-between;
     margin-top: -30vh;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     position: relative;
     z-index: 20;
 }

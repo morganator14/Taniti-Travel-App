@@ -151,8 +151,8 @@
 .transport-buttons {
     display: flex;
     flex-direction: row;
-    gap: 2vw;
-    flex-wrap: wrap;
+    gap: 1vw;
+    flex-wrap: nowrap;
 }
 .transport-button {
     width: clamp(80px, 13vw, 200px);
@@ -173,6 +173,7 @@
     width: 110%;
     left: -5%;
     position: relative;
+    margin-top: -10vh;
     z-index: 15;
     box-sizing: border-box;
     -webkit-mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
@@ -189,7 +190,7 @@
     left: -5%;
     min-height: 60vh;
     position: relative;
-    margin-top: -30vh;
+    margin-top: -40vh;
     padding: clamp(30px, 8vh, 80px) clamp(10px, 5vw, 60px);
     z-index: 11;
     background: linear-gradient(#d6aa79 30%, transparent 80%);
