@@ -9,16 +9,20 @@ import { Router, RouterLink } from '@angular/router';
 })
 export class Home {
   constructor(private router: Router) {}
-
+  
+  ngOnInit(): void {
+    this.onScroll();
+  }
+  
   goToPage(route:string) {
     this.router.navigate([route])
   }
 
-  @HostListener('window:scroll', [])
+    @HostListener('window:scroll', [])
   onScroll(): void {
   const scrollY = window.scrollY;
   const fadeStart = 0;
-  const fadeEnd = 500;
+  const fadeEnd = 150;
 
   const opacity = 1 - Math.min(scrollY / (fadeEnd - fadeStart), 1);
 
@@ -28,7 +32,6 @@ export class Home {
     fixedTop.style.pointerEvents = opacity === 0 ? 'none' : 'auto';
   }
 }
-
 }
 
 

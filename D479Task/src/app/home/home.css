@@ -46,7 +46,6 @@
 }
 .content-section {
     width: 85%;
-    margin-bottom: 10vh;
 }
 @media (max-width: 768px) {
     .content-section {
@@ -65,6 +64,7 @@
     flex-direction: row;
     gap: 5vw;
     flex-wrap: wrap;
+
 }
 .experience-card {
     width: clamp(10vw, 15vw, 20vw);
@@ -118,10 +118,15 @@
         width: 40vw;
     }
 }
+#upcoming-events {
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+}
 .events {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 2vw;
+
 }
 @media (max-width: 600px) {
     .events {
@@ -144,7 +149,8 @@
     border-radius: 5px;
     padding: 4vw 2vw;
     box-sizing: border-box;
-    scroll-margin-top: 20vh;
+    gap: 2vw;
+    z-index: 13;
 }
 @media (max-width: 768px) {
     #transport {
@@ -163,11 +169,20 @@
     background: transparent;
     border: none;
 }
+.transport-title {
+    margin-bottom: 1vh;
+}
 .transport-image {
     width: 80%;
     height: 40%;
     object-fit: cover;
-    padding-top: 1vh;
+    transition: 0.3s ease;
+    scale: 1;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0);
+}
+.transport-image:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 20px rgba(1, 31, 91, 1); 
 }
 .transport-header {
     padding: 2vw;
@@ -176,28 +191,24 @@
     width: 110%;
     left: -5%;
     position: relative;
-    margin-top: -10vh;
     z-index: 15;
     box-sizing: border-box;
+    object-fit: cover;
     -webkit-mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
     mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
 }
 .bottom-section {
-    margin-top: -60vh;
-    position: relative;
     z-index: 12;
     pointer-events: none;
 }
 #landscape {
-    width: 110%;
-    left: -5%;
-    min-height: 60vh;
+    position: absolute;
+    left: 15%;
     position: relative;
-    margin-top: -40vh;
     padding: clamp(30px, 8vh, 80px) clamp(10px, 5vw, 60px);
-    z-index: 11;
-    background: linear-gradient(#d6aa79 30%, transparent 80%);
+    z-index: 20;
     justify-items: center;
+    margin-top: -20vh;
 }
 .landscape {
     width: 80%;
@@ -205,12 +216,9 @@
     flex-direction: row;
     gap: 5vw;
     align-items: center;
-    padding-top: 15vh;
 }
-.landscape-text {
+.landscape-text, .landscape-text p, .landscape-text h2 {
     justify-items: right;
-}
-.landscape-text p {
     color: var(--white);
 }
 .landscape-image {
@@ -220,9 +228,8 @@
     width: 80%;
     margin-left: auto;
     margin-right: 0;
-    height: auto;
-    min-height: 40vh;
-    margin-top: -15vh;
+
+    margin-bottom: 10vh;
     justify-items: right;
     background-color: var(--lightBlue);
     border: 1px solid var(--lightBlue);

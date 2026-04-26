@@ -9,7 +9,11 @@ import { Router, RouterLink } from '@angular/router';
 })
 export class Food {
     constructor(private router: Router) {}
-
+  
+  ngOnInit(): void {
+    this.onScroll();
+  }
+  
   goToPage(route:string) {
     this.router.navigate([route])
   }
