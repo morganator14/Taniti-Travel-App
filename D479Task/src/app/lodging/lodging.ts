@@ -17,7 +17,7 @@ export class Lodging {
   onScroll(): void {
   const scrollY = window.scrollY;
   const fadeStart = 0;
-  const fadeEnd = 200;
+  const fadeEnd = 150;
 
   const opacity = 1 - Math.min(scrollY / (fadeEnd - fadeStart), 1);
 

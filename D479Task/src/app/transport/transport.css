@@ -1,0 +1,25 @@
+.transport-grid {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    justify-items: center;
+    top: -10vh;
+    margin-bottom: 40vh;
+}
+.transport-option {
+    background: linear-gradient(90deg, #f1faee, transparent);
+    border-radius: 5px;
+    width: 40vw;
+    height: 30vh;
+    padding: 2vw;
+    margin-top: 5vh;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 50% 50%;
+}
+.transport-image {
+    grid-row: 1/3;
+    grid-column: 2/3;
+    width: 100%;
+}
