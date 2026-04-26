@@ -26,6 +26,9 @@
     background-color: var(--lightBlue);
     cursor: pointer;
 }
+.scroll-body {
+    margin-top: 45vh;
+}
 .palm-tree {
     width: 100%;
 }
