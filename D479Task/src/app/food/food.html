@@ -4,7 +4,7 @@
     <div class="grid">
 
         <header class="header">
-            <h1 (click)="goToPage('/home')">Travel Taniti</h1>
+            <h1 (click)="goToPage('/home')" class="header-text">Travel Taniti</h1>
         </header>
 
         <nav class="nav">
@@ -19,60 +19,65 @@
             <section class="nav-element" (click)="goToPage('/activities')">
                 <h3>Activities</h3>
             </section>
+            <div class="nav-gap"></div>
+            <section class="nav-element" (click)="goToPage('/transport')">
+                <h3>Transportation</h3>
+            </section>
+            <div class="nav-gap"></div>
+            <section class="nav-element" (click)="goToPage('/activities')">
+                <h3>Contact Us</h3>
+            </section>
         </nav>
     </div>
 </div>
   
 <section class="scroll-body">
-    <main class="restaurant-grid">
-        <h2 class="restaurant-category">Authentic</h2>
-        <section class="restaurant">
-            <img class="restaurant-image" src="Placeholder_Image.jpg">
-            <h3 class="restaurant-name">text</h3>
-            <div class="restaurant-info">Restaurant Info</div>
-        </section>
-        <section class="restaurant">
-            <img class="restaurant-image" src="Placeholder_Image.jpg">
-            <h3 class="restaurant-name">text</h3>
-            <div class="restaurant-info">Restaurant Info</div>
-        </section>
-        <section class="restaurant">
-            <img class="restaurant-image" src="Placeholder_Image.jpg">
-            <h3 class="restaurant-name">text</h3>
-            <div class="restaurant-info">Restaurant Info</div>
-        </section>
+  <main class="restaurant-grid">
+    <h2 class="restaurant-category">Authentic</h2>
+<section 
+  class="restaurant" 
+  *ngFor="let card of authenticCards; let i = index"
+  [class.flipped]="card.flipped" 
+  (click)="toggle(authenticCards, i)">
+    <div class="face front">
+        <img class="restaurant-image" src="Placeholder_Image.jpg">
+        <h3 class="restaurant-name">{{ card.title }}</h3>
+    </div>
+    <div class="face back">
+        <p>{{ card.back }}</p>
+        <button>Book Now!</button>
+    </div>
+</section>
         <h2 class="restaurant-category">Family Friendly</h2>
-        <section class="restaurant">
-            <img class="restaurant-image" src="Placeholder_Image.jpg">
-            <h3 class="restaurant-name">text</h3>
-            <div class="restaurant-info">Restaurant Info</div>
-        </section>
-        <section class="restaurant">
-            <img class="restaurant-image" src="Placeholder_Image.jpg">
-            <h3 class="restaurant-name">text</h3>
-            <div class="restaurant-info">Restaurant Info</div>
-        </section>
-        <section class="restaurant">
-            <img class="restaurant-image" src="Placeholder_Image.jpg">
-            <h3 class="restaurant-name">text</h3>
-            <div class="restaurant-info">Restaurant Info</div>
-        </section>
+<section 
+  class="restaurant" 
+  *ngFor="let card of familyCards; let i = index"
+  [class.flipped]="card.flipped" 
+  (click)="toggle(familyCards, i)">
+    <div class="face front">
+        <img class="restaurant-image" src="Placeholder_Image.jpg">
+        <h3 class="restaurant-name">{{ card.title }}</h3>
+    </div>
+    <div class="face back">
+        <p>{{ card.back }}</p>
+        <button>Book Now!</button>
+    </div>
+</section>
         <h2 class="restaurant-category">Couples Dining</h2>
-        <section class="restaurant">
-            <img class="restaurant-image" src="Placeholder_Image.jpg">
-            <h3 class="restaurant-name">text</h3>
-            <div class="restaurant-info">Restaurant Info</div>
-        </section>
-        <section class="restaurant">
-            <img class="restaurant-image" src="Placeholder_Image.jpg">
-            <h3 class="restaurant-name">text</h3>
-            <div class="restaurant-info">Restaurant Info</div>
-        </section>
-        <section class="restaurant">
-            <img class="restaurant-image" src="Placeholder_Image.jpg">
-            <h3 class="restaurant-name">text</h3>
-            <div class="restaurant-info">Restaurant Info</div>
-        </section>
+<section 
+  class="restaurant" 
+  *ngFor="let card of couplesCards; let i = index"
+  [class.flipped]="card.flipped" 
+  (click)="toggle(couplesCards, i)">
+    <div class="face front">
+        <img class="restaurant-image" src="Placeholder_Image.jpg">
+        <h3 class="restaurant-name">{{ card.title }}</h3>
+    </div>
+    <div class="face back">
+        <p>{{ card.back }}</p>
+        <button>Book Now!</button>
+    </div>
+</section>
     </main>
     <footer class="footer" id="food-footer">
         <h2>Questions?</h2>

@@ -52,7 +52,7 @@ h3 {
 }
 p {
     color: var(--darkBlue);
-    font-size: clamp(11px, 1vw, 14px);
+    font-size: clamp(14px, 1vw, 16px);
     font-family: "agenda", sans-serif;
     font-weight: 400;
     margin: 0px;
@@ -65,6 +65,14 @@ p {
     width: 100%;
     z-index: 10;
     background: transparent;
+}
+.header-text {
+    transform: scale(1);
+    transform-origin: center;
+    transition: scale 0.3s ease;
+}
+.header-text:hover {
+    scale: 1.015;
 }
 .body{
     background:linear-gradient(#f1faee, #011F5B);
@@ -123,7 +131,6 @@ p {
     display: flex;
     flex-direction: row;
     padding: clamp(20px, 5vh, 10vh) clamp(16px, 5vh, 6vh);
-    gap: 2vw;
     background: linear-gradient(transparent 0%, #f1faee);
     align-items: center;
     justify-content: space-between;
@@ -134,7 +141,7 @@ p {
 }
 .footer-button {
     height: 5vh;
-    width: clamp(80px, 10vw, 160px);
+    width: clamp(90px, 10vw, 160px);
     background-color: var(--white);
     border: none;
     border-radius: 5px;

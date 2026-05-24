@@ -4,7 +4,7 @@
         <div class="grid">
 
             <header class="header">
-                <h1 (click)="goToPage('/home')">Travel Taniti</h1>
+                <h1 (click)="goToPage('/home')" class="header-text">Travel Taniti</h1>
             </header>
 
             <nav class="nav">
@@ -19,6 +19,14 @@
                 <section class="nav-element" (click)="goToPage('/activities')">
                     <h3>Activities</h3>
                 </section>
+                <div class="nav-gap"></div>
+            <section class="nav-element" (click)="goToPage('/transport')">
+                <h3>Transportation</h3>
+            </section>
+            <div class="nav-gap"></div>
+            <section class="nav-element" (click)="goToPage('contactus')">
+                <h3>Contact Us</h3>
+            </section>
             </nav>
         </div>
     </div>

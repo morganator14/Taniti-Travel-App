@@ -198,7 +198,7 @@
     mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
 }
 .bottom-section {
-    margin-top: -100vh;
+    margin-top: -10vh;
     z-index: 12;
     pointer-events: none;
 }
