@@ -34,9 +34,14 @@
     backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
 }
+.front {
+    cursor: pointer;
+    position: relative;
+}
 .back {
       background: #f0effe;
       border: 1px solid #c9c4f5;
+      border-radius: 5px;
       transform: rotateY(180deg);
       justify-items: center;
       align-content: center;
@@ -60,7 +65,7 @@
     display: block;
     margin: 0.75vw;
 }
-.restaurant::after {
+.front::after {
     content: "";
     position: absolute;
     inset: 0;
@@ -85,10 +90,10 @@
     width: 90%;
     font-family:"agenda", sans-serif;
 }
-.restaurant:hover::after {
+.front:hover::after {
     opacity: 1;
 }
-.restaurant:hover .restaurant-info {
+.front:hover .restaurant-info {
     visibility: visible;
     opacity: 1;
 }

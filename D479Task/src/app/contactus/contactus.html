@@ -32,17 +32,50 @@
     </div>
 
     <section class="scroll-body">
-        <main class="lodges">
-            
+        <main class="contact-grid">
+            <section class="contact-info">
+                <h2>Need to Know</h2>
+                <h3><strong>Language:</strong> English</h3>
+                <h3><strong>Currency:</strong> USD, major credit cards accepted</h3>
+                <h3><strong>Laws:</strong> Drinking age is 16</h3>
+                <br>
+                <h3><strong> Contact Email:</strong> tanititravel@taniti.org</h3>
+            </section>
+            <section class="contact-form">
+                <h2>Contact Us!</h2>
+                <form class="form">
+                    <div class="form-line">
+                    <label for="fname">First Name:</label>
+                    <input class="form-input" id="fname" type="text">
+                    </div>
+                    <div class="form-line">
+                    <label for="lname">Last Name:</label>
+                    <input class="form-input" id="lname" type="text">
+                    </div>
+                    <div class="form-line">
+                    <label for="email">Email:</label>
+                    <input class="form-input" id="email" type="email">
+                    </div>
+                    <div class="form-line">
+                    <label for="message">Message:</label>
+                    <input class="form-input" id="message" type="text">
+                    </div>
+                    <div class="form-line">
+                        <button class="submit-button" type="submit">Submit</button>
+                    </div>
+                </form>
+            </section>
         </main>
-        <footer class="footer" id="lodging-footer">
+        <footer class="footer" id="contact-footer">
             <h2>Questions?</h2>
             <h3>Contact us at tanititravel@taniti.org</h3>
             <a [routerLink]="[]" fragment="header" class="footer-button">Back to Top</a>
+            <button class="footer-button" (click)="goToPage('/home')">Home</button>
             <button class="footer-button" (click)="goToPage('/food')">Food</button>
             <button class="footer-button" (click)="goToPage('/lodging')">Lodging</button>
             <button class="footer-button" (click)="goToPage('/activities')">Activities</button>
             <button class="footer-button" (click)="goToPage('transport')">Transportation</button>
+            <button class="footer-button" (click)="goToPage('/contactus')">Contact Us</button>
         </footer>
     </section>
 </div>

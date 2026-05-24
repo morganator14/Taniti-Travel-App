@@ -3,6 +3,7 @@ import { Food } from './food/food';
 import { Lodging } from './lodging/lodging';
 import { Transport } from './transport/transport';
 import { Activities } from './activities/activities';
+import { Contactus} from './contactus/contactus'
 import { Home } from './home/home';
 
 export const routes: Routes = 
@@ -12,7 +13,7 @@ export const routes: Routes =
     {path:'lodging', component:Lodging},
     {path:'transport',component:Transport},
     {path:'activities', component:Activities},
+    {path: 'contactus', component:Contactus},
     {path:'home', component:Home},
     
-
 ];

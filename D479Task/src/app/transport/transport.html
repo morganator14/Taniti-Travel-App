@@ -9,18 +9,26 @@
                 </header>
 
                 <nav class="nav">
-                    <section class="nav-element" (click)="goToPage('/food')">
-                        <h3>Food</h3>
-                    </section>
-                    <div class="nav-gap"></div>
-                    <section class="nav-element" (click)="goToPage('/lodging')">
-                        <h3>Lodging</h3>
-                    </section>
-                    <div class="nav-gap"></div>
-                    <section class="nav-element" (click)="goToPage('/activities')">
-                        <h3>Activities</h3>
-                    </section>
-                </nav>
+                <section class="nav-element" (click)="goToPage('/food')">
+                    <h3>Food</h3>
+                </section>
+                <div class="nav-gap"></div>
+                <section class="nav-element" (click)="goToPage('/lodging')">
+                    <h3>Lodging</h3>
+                </section>
+                <div class="nav-gap"></div>
+                <section class="nav-element" (click)="goToPage('/activities')">
+                    <h3>Activities</h3>
+                </section>
+                <div class="nav-gap"></div>
+            <section class="nav-element" (click)="goToPage('/transport')">
+                <h3>Transportation</h3>
+            </section>
+            <div class="nav-gap"></div>
+            <section class="nav-element" (click)="goToPage('/contactus')">
+                <h3>Contact Us</h3>
+            </section>
+            </nav>
             </div>
         </div>
         <section class="scroll-body">
@@ -50,10 +58,12 @@
                 <h2>Questions?</h2>
                 <h3>Contact us at tanititravel@taniti.org</h3>
                 <a [routerLink]="[]" fragment="header" class="footer-button">Back to Top</a>
+                <button class="footer-button" (click)="goToPage('/home')">Home</button>
                 <button class="footer-button" (click)="goToPage('/food')">Food</button>
                 <button class="footer-button" (click)="goToPage('/lodging')">Lodging</button>
                 <button class="footer-button" (click)="goToPage('/activities')">Activities</button>
                 <button class="footer-button" (click)="goToPage('transport')">Transportation</button>
+                <button class="footer-button" (click)="goToPage('/contactus')">Contact Us</button>
             </footer>
         </section>
     </div>
